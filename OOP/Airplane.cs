@@ -8,10 +8,10 @@ namespace OOP
 {
     public class Airplane
     {
-        protected string StartCity;
-        protected string FinishCity;
-        protected MyDate StartDate;
-        protected MyDate FinishDate;
+        protected string startCity;
+        protected string finishCity;
+        protected MyDate startDate;
+        protected MyDate finishDate;
 
     }
 }
