@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    internal class Airplane
+    public class Airplane
     {
+        protected string StartCity;
+        protected string FinishCity;
+        protected MyDate StartDate;
+        protected MyDate FinishDate;
+
     }
 }
