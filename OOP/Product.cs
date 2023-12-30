@@ -144,6 +144,29 @@ namespace OOP
             Weight = weight;
         }
 
-        public Product
+        public Product(Product product) 
+        {
+            Name = product.Name;
+            Price = product.Price;
+            Cost = product.Cost;
+            Quantity = product.Quantity;
+            Producer = product.Producer;
+            Weight = product.Weight;
+        }
+
+        public decimal GetPriceInUAH()
+        {
+            return Price * Cost.ExRate;
+        }
+
+        public decimal GetTotalPriceInUAH()
+        {
+            return Price * Cost.ExRate * Quantity;
+        }
+        public double GetTotalWeight()
+        {
+            return Weight * Quantity;
+        }
+
     }
 }
