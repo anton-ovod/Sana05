@@ -52,14 +52,7 @@ namespace OOP
 
             set
             {
-                try
-                {
-                    startDate = new MyDate(value);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
+                startDate = new MyDate(value);
             }
         }
 
@@ -72,14 +65,7 @@ namespace OOP
 
             set
             {
-                try
-                {
-                    finishDate = new MyDate(value);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
+                finishDate = new MyDate(value);
             }
         }
 
@@ -93,10 +79,10 @@ namespace OOP
 
         public Airplane(string startCity, string finishCity, MyDate startDate, MyDate finishDate)
         {
-            StartCity=startCity;
-            FinishCity=finishCity;
-            StartDate=startDate;
-            FinishDate=finishDate;
+            StartCity = startCity;
+            FinishCity = finishCity;
+            StartDate = startDate;
+            FinishDate = finishDate;
         }
 
         public Airplane(MyDate startDate, MyDate finishDate)
@@ -143,7 +129,7 @@ namespace OOP
 
         public override string ToString()
         {
-            return StartCity + " -> " + FinishCity + "\n" + 
+            return StartCity + " -> " + FinishCity + "\n" +
                 StartDate + " -> " + FinishDate;
         }
     }
