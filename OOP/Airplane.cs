@@ -87,7 +87,7 @@ namespace OOP
 
         public Airplane(MyDate startDate, MyDate finishDate)
         {
-            StartCity = "Belin";
+            StartCity = "Berlin";
             FinishCity = "Warsaw";
             StartDate = startDate;
             FinishDate = finishDate;
