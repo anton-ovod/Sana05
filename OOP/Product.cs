@@ -168,5 +168,9 @@ namespace OOP
             return Weight * Quantity;
         }
 
+        public override string ToString()
+        {
+            return Name + ":" + Price + ":" + Cost + ":" + Quantity + ":" + Producer + ":" + Weight;
+        }
     }
 }
