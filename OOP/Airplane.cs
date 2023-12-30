@@ -131,6 +131,7 @@ namespace OOP
                 startTime = new DateTime(StartDate.Year, StartDate.Month, StartDate.Day, (int)StartDate.Hour, (int)StartDate.Minute, 0);
                 finishTime = new DateTime(FinishDate.Year, FinishDate.Month, FinishDate.Day, (int)FinishDate.Hour, (int)FinishDate.Minute, 0);
             }
+
             TotalTimeMinutes = (int)(finishTime - startTime).TotalMinutes;
             return TotalTimeMinutes;
         }
